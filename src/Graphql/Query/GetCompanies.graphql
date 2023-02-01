@@ -1,0 +1,23 @@
+query GetCompanies{
+  companies{
+    signature
+    companyid
+    companycode
+    companyname
+    taxno
+    taxoffice
+    telno
+    country
+    city
+    currency
+    address
+    mersisno
+    website
+    email
+    postcode
+    chartaccount
+    traderegisterno
+    telno
+    faxno
+  }
+}

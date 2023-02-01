@@ -1,0 +1,7 @@
+mutation AddOrUpdateAcBankAccount($addOrUpdate:AddOrUpdateEnum!,$prmAcBankAccount:AcBankaccountInput!){
+  addOrUpdateAcBankAccount(addOrUpdate: $addOrUpdate,prmAcBankAccount: $prmAcBankAccount){
+    resultType
+    messageText
+
+  }
+}

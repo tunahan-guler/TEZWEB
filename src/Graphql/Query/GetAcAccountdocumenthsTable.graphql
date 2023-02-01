@@ -1,0 +1,27 @@
+query GetAcAccountdocumenthsTable ($prmAccDocType:Int!, $prmDocNo:String!, $prmEndTime:DateTime, $stakeholderCode:FilterTypeInputOfStringInput!, $stakeholderName:FilterTypeInputOfStringInput!, $prmStartDate:DateTime){
+  acAccountdocumenthsTable(prmAccDocType: $prmAccDocType, prmDocNo: $prmDocNo, prmEndTime: $prmEndTime, prmStartDate: $prmStartDate, stakeholderCode: $stakeholderCode, stakeholderName: $stakeholderName){
+    invoiceno
+    docdate
+    accdocno
+    stakeholderid
+    amount
+    currency
+    companyid
+    accdocyear
+    amountlc
+    explanation
+    currencylc
+    stakeholder {
+      stakeholdername
+      stakeholdercode
+    }
+    acAccountdocumentis {
+      movementtypeid
+      ownercode
+      maturitydate
+      amount
+      currency
+      explanation
+    }
+  }
+}

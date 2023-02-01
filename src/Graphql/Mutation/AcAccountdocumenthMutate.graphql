@@ -1,0 +1,11 @@
+mutation AcAccountdocumenthMutate($addOrUpdate: AddOrUpdateEnum!, $prmAcAccountdocumenth:AcAccountdocumenthInput!) {
+  addOrUpdateAcAccountdocumenth(addOrUpdate: $addOrUpdate, prmAcAccountdocumenth:$prmAcAccountdocumenth ) {
+    resultType
+    messageText
+    data {
+      accdocno
+      accountcode
+      invoiceno
+    }
+  }
+}

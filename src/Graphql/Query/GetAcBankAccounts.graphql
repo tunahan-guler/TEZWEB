@@ -1,0 +1,15 @@
+query GetAcBankAccounts($bankAccountCode:FilterTypeInputOfStringInput!, $bankAccountName:FilterTypeInputOfStringInput!, $bankCode:FilterTypeInputOfStringInput!){
+  acBankaccountsWithFilterType(bankAccountCode: $bankAccountCode, bankAccountName: $bankAccountName, bankCode: $bankCode){
+    plantid
+    bastat
+    bankaccountcode
+    bankaccountname
+    bankcode
+    branchcode
+    bankaccounttypeid
+    creditcard
+    currency
+    accountno
+    ibanno
+  }
+}

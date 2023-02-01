@@ -1,0 +1,37 @@
+query GetTranshists($batchNo:FilterTypeInputOfStringInput!, $itemCode:FilterTypeInputOfStringInput!, $matDocNo:FilterTypeInputOfStringInput!, $serialNo:FilterTypeInputOfStringInput!, $stakeholderName:FilterTypeInputOfStringInput!, $transCode:String!){
+  transhists(batchNo: $batchNo, itemCode: $itemCode, matDocNo: $matDocNo, serialNo: $serialNo, stakeholderName: $stakeholderName, transCode: $transCode){
+ matdocno
+    matdocseq
+    stakeholderid
+    itemcode
+    serialno
+    batchno
+    transqty
+    variantid
+    storagelocationid
+    storagebinid
+    plantid
+    newstoragelocationid
+    newstoragebinid
+    newplantid
+    physicalqty
+    availableqty
+    matdocyear
+    reservedqty
+    onqualityqty
+    blockedqty
+    username
+    transtime
+    transcode
+    referencetype
+    referenceid
+    entrydate
+      ctTransCode {
+      transCode
+      transDesc
+    }
+    stakeholder {
+      stakeholdername
+    }
+  }
+}

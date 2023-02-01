@@ -1,0 +1,6 @@
+mutation DeleteAcPaymentTerm($prmPaymentTerm:String!){
+  deleteAcPaymentTerm(prmPaymentTerm: $prmPaymentTerm){
+    resultType
+    messageText
+  }
+}

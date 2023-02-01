@@ -1,0 +1,11 @@
+query GetAcPaymentTerms($paymentTermCode:FilterTypeInputOfStringInput!, $paymentTermDesc:FilterTypeInputOfStringInput!){
+  acPaymentTermsWithFilter(paymentTermCode: $paymentTermCode, paymentTermDesc: $paymentTermDesc){
+    paymentterm
+    paymenttermdesc
+    paymenttermtype
+    maindate
+    daycount
+    fixedday
+    active
+  }
+}

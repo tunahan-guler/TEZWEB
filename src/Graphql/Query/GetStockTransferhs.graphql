@@ -1,0 +1,26 @@
+query GetStockTransferHs($prmCompanyName:String!, $prmStartDate:DateTime, $prmEndDate:DateTime, $prmSubscriptionIdR:String!, $prmSubscriptionIdS:String!){
+  stocktransferhs(prmCompanyName: $prmCompanyName, prmEndDate: $prmEndDate, prmStartDate: $prmStartDate, prmSubscriptionIdR: $prmSubscriptionIdR,prmSubscriptionIdS:$prmSubscriptionIdS){
+    transferid
+    subscriptionsidS
+    subscriptionsidR
+    sendtime
+    emailS
+    tstat
+    accepttime
+    emailR
+    explanationS
+    explanationR
+    subscription {
+      companyName
+    }
+    stocktransferis{
+      transferid
+      seqno
+      itemcode
+      serialno
+      batchno
+      transqty
+      unit
+    }
+  }
+}

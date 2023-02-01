@@ -1,0 +1,20 @@
+query GetStocks($itemCode:FilterTypeInputOfStringInput!, $itemName:FilterTypeInputOfStringInput!, $serialNo:FilterTypeInputOfStringInput!){
+  stocks(itemCode: $itemCode, itemName: $itemName serialNo: $serialNo){
+    itemcode
+    serialno
+    batchno
+    availableqty
+    variantid
+    physicalqty
+    entrydate 
+    itemcodeNavigation {
+      itemname
+      unitsale
+      baseunit 
+    }
+    variant {
+      variantname
+    }
+    physicalqty 
+  }
+}

@@ -1,0 +1,8 @@
+mutation AddSubscriptionUser($prmSubscriptionUser:SubscriptionUserInput!) {
+  addSubscriptionUser (prmSubscriptionUser:$prmSubscriptionUser ) {
+    data {
+      subscriptionId
+      perNo
+    }
+  }
+}

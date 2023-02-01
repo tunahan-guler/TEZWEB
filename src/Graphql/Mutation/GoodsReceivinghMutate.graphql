@@ -1,0 +1,6 @@
+mutation AddOrUpdateGoodsReceivinghMutate($addOrUpdate:AddOrUpdateEnum!, $prmGoodsReceivingh:GoodsreceivinghInput!){
+  addOrUpdateStockGoodsReceivingh(addOrUpdate: $addOrUpdate, prmGoodsReceivingh: $prmGoodsReceivingh){
+    resultType
+    messageText
+  }
+}

@@ -1,0 +1,6 @@
+mutation DeleteAcBankAccount($prmAcBankAccountCode:String!, $prmPlantId:Int!){
+  deleteAcBankAccount(prmBankAccountCode: $prmAcBankAccountCode, prmPlantId: $prmPlantId){
+    resultType
+    messageText
+  }
+}

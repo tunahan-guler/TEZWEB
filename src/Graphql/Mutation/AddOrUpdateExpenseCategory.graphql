@@ -1,0 +1,10 @@
+mutation AddOrUpdateExpenseCategory($addOrUpdate:AddOrUpdateEnum!, $prmExpenseCategory:ExpensecategoryInput!) {
+  addOrUpdateExpenseCategory(addOrUpdate: $addOrUpdate, prmExpenseCategory: $prmExpenseCategory ) {
+    resultType
+    messageText
+    data {
+      expensecategoryid
+      expensecategorydesc
+    }
+  }
+}

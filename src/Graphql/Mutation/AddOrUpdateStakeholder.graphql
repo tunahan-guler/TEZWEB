@@ -1,0 +1,43 @@
+mutation AddOrUpdateStakeholder($addOrUpdate:AddOrUpdateEnum!, $prmStakeholder: StakeholderInput!){
+  addOrUpdateStakeholder(addOrUpdate: $addOrUpdate, prmStakeholder: $prmStakeholder){
+    resultType
+    messageText
+    data{
+     stakeholderid
+    iname
+    isurname
+    stakeholdercode
+    stakeholdername
+    stakeholdertype
+    paymentterm
+    taxno
+    risklimit
+    risknotes
+    tradetype
+    identityno
+    currency
+    shadbook {
+      shadbookid
+      fax
+      website
+      email
+      shadname
+      shadtype
+      countrykey
+      city
+      county
+      postcode
+      address
+      phone
+    }
+    stakeholdercontacts{
+      contactname
+      contactemail
+      contactmobile
+      contactphone
+      contactrole
+      contactnotes
+    }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+mutation AddOrUpdateStockBlockRequesth($addOrUpdate:AddOrUpdateEnum!, $prmStockBlockRequesth:StockblockrequesthInput!){
+  addOrUpdateStockBlockRequesth(addOrUpdate: $addOrUpdate, prmStockBlockRequesth: $prmStockBlockRequesth){
+    resultType
+    messageText
+  }
+}

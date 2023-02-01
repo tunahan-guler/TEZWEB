@@ -1,0 +1,6 @@
+mutation AddOrUpdateCompany($addOrUpdate:AddOrUpdateEnum!, $prmCompany:CompanyInput!){
+  addOrUpdateCompany(addOrUpdate: $addOrUpdate, prmCompany: $prmCompany){
+    resultType
+    messageText
+  }
+}

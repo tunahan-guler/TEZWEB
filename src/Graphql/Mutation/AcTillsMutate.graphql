@@ -1,0 +1,6 @@
+mutation AddOrUpdateAcTill($addOrUpdate:AddOrUpdateEnum!, $prmAcTill:AcTillInput!){
+  addOrUpdateTill(addOrUpdate: $addOrUpdate, prmAcTill: $prmAcTill){
+    resultType
+    messageText
+  }
+}

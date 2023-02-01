@@ -1,0 +1,6 @@
+mutation DeleteCompany($prmCompanyId:Long!){
+  deleteCompany(prmCompanyId: $prmCompanyId){
+    resultType
+    messageText
+  }
+}

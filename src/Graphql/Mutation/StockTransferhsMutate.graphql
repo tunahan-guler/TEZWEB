@@ -1,0 +1,12 @@
+mutation AddOrUpdateStockTransferH($addOrUpdate:AddOrUpdateEnum!, $prmStockTransferh:StocktransferhInput!){
+  addOrUpdateStocktransferh(addOrUpdate: $addOrUpdate, prmStocktransferh: $prmStockTransferh){
+    resultType
+    messageText
+    data{
+      transferid
+      tstat
+      subscriptionsidS
+      subscriptionsidR
+    }
+  }
+}

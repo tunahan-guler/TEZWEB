@@ -1,0 +1,41 @@
+query GetStakeholdersForAccountStatement($stakeholderCode:FilterTypeInputOfStringInput!, $stakeholderName:FilterTypeInputOfStringInput!, $stakeholderType:String!){
+  stakeholdersForAccountStatement(stakeholderCode: $stakeholderCode, stakeholderName: $stakeholderName, stakeholderType: $stakeholderType){
+  stakeholderid
+    iname
+    isurname
+    stakeholdercode
+    stakeholdername
+    stakeholdertype
+    paymentterm
+    taxno
+    risklimit
+    risknotes
+    tradetype
+    identityno
+    currency
+    shadbook {
+      shadbookid
+      fax
+      website
+      email
+      shadname
+      shadtype
+      countrykey
+      city
+      county
+      postcode
+      address
+      phone
+    }
+    stakeholdercontacts{
+      contactid
+      contactname
+      contactemail
+      contactmobile
+      contactphone
+      contactrole
+      contactnotes
+    }
+    
+  }
+}

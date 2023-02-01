@@ -1,0 +1,6 @@
+mutation DeleteExpenseCategory($prmExpenseCategoryId:Long!){
+  deleteExpenseCategory(prmExpenseCategoryId: $prmExpenseCategoryId){
+    resultType
+    messageText
+  }
+}

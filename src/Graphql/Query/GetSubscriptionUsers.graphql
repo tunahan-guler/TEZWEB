@@ -1,0 +1,21 @@
+query GetSubscriptionUsers($prmSubsId:String!){
+  subscriptionUsers(where:{subscriptionId:{eq:$prmSubsId}}){
+    subscriptionId
+    email
+    userDesc
+    langType
+    ustat
+    validTo
+    validFrom
+    createTime
+    createUser
+    changeTime
+    changeUser
+    userroles{
+      email
+      subscriptionid
+      roleCode
+      
+    }
+  }
+}

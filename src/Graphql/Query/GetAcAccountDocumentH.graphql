@@ -1,0 +1,11 @@
+query GetAcAccountDocumentH($prmInvoiceNo:Long, $prmDocType:Int){
+  acAccountdocumenths(where: {invoiceno:{eq:$prmInvoiceNo}, accdoctype:{eq:$prmDocType}}){
+    invoiceno
+    docdate
+    accdocno
+    amountlc
+    currencylc
+    amount
+    currency
+  }
+}

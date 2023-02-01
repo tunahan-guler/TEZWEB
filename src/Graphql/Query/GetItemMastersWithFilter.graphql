@@ -1,0 +1,23 @@
+query GetItemMastersWithFilter($prmItemCode:String!, $prmItemName:String!,$prmItemTypeCode:String!){
+  itemmastersWithFilter(prmItemCode: $prmItemCode, prmItemName: $prmItemName,prmItemTypeCode:$prmItemTypeCode){
+    itemcode
+    sctcode
+    pctcode
+    stockcontrol
+    minstockqty
+    maxstockqty
+    barcodeno
+    categoryid
+    currency
+    itemname
+    vatcode
+    purchaseprice
+    salesprice
+    stockmanagement
+    istat
+    unitsale
+    baseunit
+    itemtypecode
+    purchaseprice
+  }
+}

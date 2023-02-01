@@ -1,0 +1,9 @@
+query GetTaxes {
+  taxes {
+    taxcode
+    taxdesc
+    taxrate
+    taxtype
+    taxkey
+  }
+}

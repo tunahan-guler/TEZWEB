@@ -1,0 +1,9 @@
+query GetAcTills($tillCode:FilterTypeInputOfStringInput!, $tillName:FilterTypeInputOfStringInput!){
+  acTillsWithFilter(tillCode: $tillCode, tillName: $tillName){
+    plantid
+    tillcode
+    tillname
+    currency
+    tstat
+  }
+}

@@ -1,0 +1,40 @@
+query GetAllStakeholders{
+  stakeholders{
+    stakeholderid
+    iname
+    isurname
+    stakeholdercode
+    stakeholdername
+    stakeholdertype
+    paymentterm
+    taxno
+    risklimit
+    risknotes
+    tradetype
+    taxoffice
+    taxno
+    shadbook {
+      shadbookid
+      fax
+      website
+      email
+      shadname
+      shadtype
+      countrykey
+      city
+      county
+      postcode
+      address
+      phone
+    }
+    stakeholdercontacts{
+      contactname
+      contactemail
+      contactmobile
+      contactphone
+      contactrole
+      contactnotes
+    }
+    
+  }
+}

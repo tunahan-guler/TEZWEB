@@ -1,0 +1,7 @@
+query GetCurrencies{
+  acCurrencies{
+    currency
+    description
+    cstat
+  }
+}

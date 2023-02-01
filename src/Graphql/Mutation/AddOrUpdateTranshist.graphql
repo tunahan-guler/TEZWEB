@@ -1,0 +1,6 @@
+mutation AddOrUpdateTranshist($addOrUpdate:AddOrUpdateEnum!, $prmTranshist:TranshistInput!){
+  addOrUpdateTranshist(addOrUpdate: $addOrUpdate,prmTranshist: $prmTranshist){
+    resultType
+    messageText
+  }
+}

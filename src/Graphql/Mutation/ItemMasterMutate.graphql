@@ -1,0 +1,6 @@
+mutation AddOrUpdateItemMaster($prmItemMaster:ItemmasterInput!, $addOrUpdate:AddOrUpdateEnum!) {
+    addOrUpdateItemMaster (prmItemMaster: $prmItemMaster , addOrUpdate:$addOrUpdate ) {
+      resultType
+      messageText
+    }
+}

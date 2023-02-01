@@ -1,0 +1,6 @@
+query GetCities($prmCountryKey:String!){
+  cities(where: {countryKey:{eq:$prmCountryKey}}){
+    city
+    cityCode
+  }
+}

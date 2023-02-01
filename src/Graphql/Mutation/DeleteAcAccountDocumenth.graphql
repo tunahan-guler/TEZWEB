@@ -1,0 +1,6 @@
+mutation DeleteAcAccountDocumenth($prmaccdocno:String!,$prmaccdocyear:Int!, $prmcompanyId:Long!){
+  deleteAcAccountDocumenth(prmaccdocno:$prmaccdocno, prmaccdocyear: $prmaccdocyear, prmcompanyId: $prmcompanyId){
+    resultType
+    messageText
+  }
+}

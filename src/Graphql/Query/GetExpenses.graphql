@@ -1,0 +1,10 @@
+query GetExpenses($expenseCode:FilterTypeInputOfStringInput!, $expenseName:FilterTypeInputOfStringInput!, $expenseCategoryId:Long!){
+  expenses(expenseCode: $expenseCode,expenseName: $expenseName, expenseCategoryId: $expenseCategoryId){
+    expensecode
+    expensename
+    expensecategoryid
+    expensecategory {
+      expensecategorydesc
+    }
+  }
+}

@@ -1,0 +1,45 @@
+query GetStakeholders($prmStakeholderType:String){
+  stakeholders(where: {or:[{stakeholdertype:{eq:"X"}}, {stakeholdertype:{eq:$prmStakeholderType}}]}){
+    stakeholderid
+    iname
+    isurname
+    stakeholdercode
+    stakeholdername
+    stakeholdertype
+    paymentterm
+    taxno
+    risklimit
+    risknotes
+    tradetype
+    identityno
+    taxoffice
+    taxno
+    shadbookid
+    currency
+    shadbook {
+      shadbookid
+      fax
+      website
+      email
+      shadname
+      shadtype
+      countrykey
+      city
+      county
+      postcode
+      address
+      phone
+    }
+    stakeholdercontacts{
+      contactid
+      stakeholderid
+      contactname
+      contactemail
+      contactmobile
+      contactphone
+      contactrole
+      contactnotes
+    }
+    
+  }
+}

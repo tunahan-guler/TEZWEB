@@ -1,0 +1,6 @@
+mutation DeleteAcTills($prmAcTillCode:String!, $prmPlantId:Int!){
+  deleteAcTills(prmTillCode: $prmAcTillCode, prmPlantId: $prmPlantId){
+    resultType
+    messageText
+  }
+}

@@ -1,0 +1,6 @@
+query GetExpenseCategory($expenseCategoryDesc:FilterTypeInputOfStringInput!){ 
+  expensecategory(expenseCategoryDesc:$expenseCategoryDesc){
+    expensecategoryid
+    expensecategorydesc
+  }
+}

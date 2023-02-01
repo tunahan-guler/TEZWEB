@@ -1,0 +1,6 @@
+query GetCountries{
+  countries{
+    countryKey
+    country
+  }
+}

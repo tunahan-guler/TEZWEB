@@ -1,0 +1,22 @@
+query GetItemMastersWithFilterType($itemCode:FilterTypeInputOfStringInput!, $itemName:FilterTypeInputOfStringInput!,$itemTypeCode:FilterTypeInputOfStringInput!){
+  itemmastersWithFilterType(itemCode: $itemCode, itemName: $itemName, itemTypeCode: $itemTypeCode){
+    itemcode
+    sctcode
+    pctcode
+    stockcontrol
+    minstockqty
+    maxstockqty
+    barcodeno
+    categoryid
+    currency
+    itemname
+    vatcode
+    purchaseprice
+    salesprice
+    stockmanagement
+    istat
+    unitsale
+    baseunit
+    itemtypecode
+  }
+}

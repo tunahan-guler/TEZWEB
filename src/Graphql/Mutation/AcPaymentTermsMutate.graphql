@@ -1,0 +1,6 @@
+mutation AddOrUpdatePaymentTerms($addOrUpdate:AddOrUpdateEnum!, $AcPaymenttermInput:AcPaymenttermInput!){
+  addOrUpdatePaymentTerm(addOrUpdate:$addOrUpdate, prmAcPaymentTerm: $AcPaymenttermInput){
+    resultType
+    messageText
+  }
+}

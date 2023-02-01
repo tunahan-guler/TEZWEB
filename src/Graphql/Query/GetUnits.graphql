@@ -1,0 +1,6 @@
+query GetUnits{
+  units{
+    unitcode
+    unitname
+  }
+}

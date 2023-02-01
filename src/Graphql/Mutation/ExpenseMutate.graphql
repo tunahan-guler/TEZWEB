@@ -1,0 +1,6 @@
+mutation AddOrUpdateExpenses($addOrUpdate:AddOrUpdateEnum!, $prmExpense:ExpenseInput!){
+  addOrUpdateExpense(addOrUpdate: $addOrUpdate,prmExpense: $prmExpense){
+    resultType
+    messageText
+  }
+}

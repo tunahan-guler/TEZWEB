@@ -1,0 +1,6 @@
+mutation DeleteInvoiceh($prmInvoiceNo:Long!){
+  deleteInvoiceh(prmInvoiceNo: $prmInvoiceNo){
+    resultType
+    messageText
+  }
+}

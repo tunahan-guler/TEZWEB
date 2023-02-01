@@ -1,0 +1,6 @@
+mutation DeleteSubscriptionUsers($prmEmail:String!, $prmSubscriptionId:String!){
+  deleteSubscriptionUsers(prmEmail: $prmEmail, prmSubscriptionId: $prmSubscriptionId){
+    resultType
+    messageText
+  }
+}

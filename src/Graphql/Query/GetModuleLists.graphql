@@ -1,0 +1,8 @@
+query GetModuleList{
+  moduleLists{
+    moduleName
+    moduleDesc
+    createTime
+    createUser
+  }
+}

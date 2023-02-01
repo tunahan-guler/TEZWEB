@@ -1,0 +1,6 @@
+mutation DeleteStakeholder($prmStakeholderId:Long!){
+  deleteStakeholder(prmStakeholderId: $prmStakeholderId){
+    resultType
+    messageText
+  }
+}

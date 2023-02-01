@@ -1,0 +1,6 @@
+mutation DeleteExpense($prmExpenseCode:String!){
+  deleteExpense(prmExpenseCode: $prmExpenseCode){
+    resultType
+    messageText
+  }
+}

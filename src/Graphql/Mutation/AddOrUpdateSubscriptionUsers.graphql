@@ -1,0 +1,9 @@
+mutation AddOrUpdateSubscriptionUsers($addOrUpdate:AddOrUpdateEnum!, $prmSubscriptionUser:SubscriptionUserInput!){
+  addOrUpdateSubscriptionUser(addOrUpdate: $addOrUpdate, prmSubscriptionUser: $prmSubscriptionUser){
+    resultType
+    messageText
+    data{
+      upass
+    }
+  }
+}

@@ -1,0 +1,6 @@
+query GetInvoiceTypes($prmType:String!){
+  invoicetypes(prmType: $prmType) {
+    invoicetype1
+    invoicetypename
+  }
+}

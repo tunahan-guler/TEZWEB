@@ -1,0 +1,10 @@
+query GetRole($prmSubscriptionId:String!){
+  role(where: {subscriptionsid:{eq:$prmSubscriptionId}}){
+    roleCode
+    subscriptionsid
+    authObject
+    createtime
+    createuser
+    
+  }
+}

@@ -1,0 +1,9 @@
+mutation AddOrUpdateInvoiceH($addOrUpdate:AddOrUpdateEnum!,$prmInvoiceH: InvoicehInput!, $prmInvoiceno:Long){
+  addOrUpdateInvoiceH(addOrUpdate: $addOrUpdate, prmInvoiceH: $prmInvoiceH, prmInvoiceno:$prmInvoiceno) {
+    resultType
+    messageText
+    data {
+      invoiceno
+    }
+  }
+}

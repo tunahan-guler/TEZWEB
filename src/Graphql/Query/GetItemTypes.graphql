@@ -1,0 +1,8 @@
+query GetItemTypes{
+  itemtypes{
+    itemtypecode
+    itemtypename
+    procurementtype
+    stockfollowup
+  }
+}

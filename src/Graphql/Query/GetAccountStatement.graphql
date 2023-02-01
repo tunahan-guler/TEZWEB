@@ -1,0 +1,36 @@
+query GetAccountStatement($prmStakeholderid:Long!){
+  stakeholders(where: {stakeholderid:{eq:$prmStakeholderid}}){
+    acAccountdocumenths {
+      docdate
+      accdoctypeNavigation {
+        accdoctypename
+      }
+      accdocno
+      accdoctypeNavigation {
+        accdoctypename
+        dcindicator
+      }
+      amount
+      amountlc
+      currency
+      invoiceno
+    }
+    invoicehs {
+      invdate
+      invoiceno
+      invoicetype
+      invoicetypeNavigation {
+        invoicetypename
+      }
+      stakeholder {
+        stakeholdercode
+        stakeholdername
+      }
+      gtotalamount
+      currency
+      paymentterm
+      eiNo
+      explanation
+    }
+  }
+}

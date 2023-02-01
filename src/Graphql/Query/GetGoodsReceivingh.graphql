@@ -1,0 +1,23 @@
+query GetGoodsReceivingh($prmDeliveryNoteNo:Long, $prmEndDate:DateTime, $prmStartDate:DateTime, $prmSubscriptionIdR:String!){
+  goodsreceivinghs(prmDeliveryNoteNo: $prmDeliveryNoteNo, prmEndDate: $prmEndDate, prmStartDate: $prmStartDate, prmSubscriptionIdR: $prmSubscriptionIdR){
+    goodsreceivingid
+    subscriptionsidR
+    deliverynoteno
+    shipmenttime
+    rstat
+    receivingtime
+    emailR
+    explanationR
+    goodsreceivingis{
+      goodsreceivingid
+      seqno
+      itemcode
+      serialno
+      batchno
+      transqty
+      unit
+      rstat
+      explanationR
+    }
+  }
+}

@@ -1,0 +1,6 @@
+query GetCtTransCodes{
+  ctTransCodes{
+    transCode
+    transDesc
+  }
+}
